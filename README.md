@@ -3,6 +3,13 @@
 
 An [em_filter](https://hex.pm/packages/em_filter) agent that identifies colors and returns their name, RGB, HSL, and CMYK values via [The Color API](https://www.thecolorapi.com/) (free, no key required).
 
+
+<!-- emergence-context -->
+Part of **[EmergenceSystem](https://github.com/EmergenceSystem)** — a distributed
+discovery network of small, single-source agents. This filter joins the em_pop gossip
+mesh and answers `POST /agent/query`; Emquest fans each query out to many filters in
+parallel and aggregates the results.
+
 ## Query
 
 A hex color code in any of the supported formats. Prefixed text is stripped automatically.
